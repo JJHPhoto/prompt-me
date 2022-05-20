@@ -49,4 +49,4 @@ The first thing I did was read The Challenge included in the job application. I 
 
 As I was reading through the docs, I was taking notes on how I'd like to create and deploy the app. I decided to create the app with React and deploy it on Netlify. Once those decisions were made, it was time to start working on the app.
 
-I prioritized getting my API call working. Which proved a bit more difficult than I thought. I had done similar apps with API calls before but I was rusty. I did some Google searches and ended up on a [YouTube video](https://www.youtube.com/watch?v=Xxtu-bkSAB8)using this API in React.
+I prioritized getting my API call working. Which proved a bit more difficult than I thought. I had done similar apps with API calls before but I was rusty. I did some Google searches and ended up on a [YouTube video](https://www.youtube.com/watch?v=Xxtu-bkSAB8)using this API in React. I found this video to be very helpful as a refresher on React.

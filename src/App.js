@@ -1,7 +1,13 @@
+import Header from "./components/Header";
+import Prompt from "./components/Prompt";
+import SavedPrompts from "./components/SavedPrompts";
+
 function App() {
   return (
     <div className="App">
-      <h1>Prompt Me</h1>
+      <Header />
+      <Prompt />
+      <SavedPrompts />
     </div>
   );
 }
