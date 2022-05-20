@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# [Prompt Me](https://poetic-zuccutto-0e3ba3.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+<p>
+    <img src="https://img.shields.io/github/repo-size/JJHPhoto/prompt-me" />
+    <img src="https://img.shields.io/github/languages/top/JJHPhoto/prompt-me"  />
+    <img src="https://img.shields.io/github/issues/JJHPhoto/prompt-me" />
+    <img src="https://img.shields.io/github/last-commit/JJHPhoto/prompt-me" >
+</p>
+<p>
+    <a href="https://github.com/JJHPhoto">
+        <img alt="Github: JJHPhoto" src="https://img.shields.io/github/followers/JJHPhoto ?style=social" target="_blank" />
+    </a>
+    <a href="https://twitter.com/jpixtwit">
+        <img alt="Twitter: jpixtwit" src="https://img.shields.io/twitter/follow/jpixtwit.svg?style=social" target="_blank" />
+    </a>
+</p>
 
-In the project directory, you can run:
+## Application Description
 
-### `npm start`
+An app that uses GPT-3 to display results from a user's text prompts. This app is for my job application to Shopify's Autumn 2022 Internship.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## The Challenge
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You will write an app that sends plain text prompts to the OpenAI API and displays the results in a list.
 
-### `npm test`
+We'd like your app to have a simple-to-use interface that includes the following:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- A form for entering text prompts
+- Submitting the form sends the prompt to the OpenAI API
+- Results are displayed in a list, sorted from newest to oldest. Each result should include the original prompt and a response from the API.
 
-### `npm run build`
+## Technical Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Results should come from OpenAI’s completions API, for which you’ll need a free API key (no credit card required).
+   - We’ve provided screenshots below of demo apps we built using the OpenAI API.
+   - We recommend using the “text-curie-001” AI engine which is a good balance between speed, cost, and accuracy.
+   - You are free to use any front end framework/component library you like (or none at all!)
+2. Each result should include at least the original prompt you entered and the response from the API.
+3. Responses should be stored in order of newest to oldest.
+4. The HTML that ends up being served client-side should be accessible and semantic
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## My Workflow
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The first thing I did was read The Challenge included in the job application. I opened all the links included and then some more on OpenAI's website. After I finished my doc reading, I did a run through of their demo app and playground. Really enjoyed asking the AI history questions and watch it follow along.
 
-### `npm run eject`
+![image](historyLesson.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+As I was reading through the docs, I was taking notes on how I'd like to create and deploy the app. I decided to create the app with React and deploy it on Netlify. Once those decisions were made, it was time to start working on the app. The first thing I want to do is get my API call working.
